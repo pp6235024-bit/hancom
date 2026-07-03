@@ -1,0 +1,11 @@
+.box{width:120px: height:120px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: hotpink     ;
+color: white;
+border-radius: 14px;
+transition:transform 0.3s ease;
+}
+
+.box:hover{transform:  rotate(10deg)scale(1.2);}

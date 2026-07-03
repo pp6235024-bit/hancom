@@ -1,0 +1,24 @@
+<!DOCTYPE html> <!--HTML 문서 선언-->
+<html lang="ko"> <!--HTML 문서 시작, 한국어 페이지-->
+<head> <!--보이지 않는 영역-->
+    <meta charset="UTF-8"> <!--한글 안 깨지게-->
+    <title>지도</title> <!--브라우저 탭 이름-->
+</head>
+<body> <!-- 실제로 보이는 영역-->
+    <h1>지도 준비</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b581e52af665f%3A0x556bea7ec21c910!2z67aE64u57KSR7JWZ6rO17JuQ!5e0!3m2!1sko!2skr!4v1782785311210!5m2!1sko!2skr" 
+    width="600" 
+    height="450" 
+    style="border: 2px solid #1a59649d;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</body>
+</html>
+
+<!--
+- allowfullscreen="": 사용자가 지도를 전체화면으로 볼 수 있게 허용
+- loading="lazy": 페이지 로딩 시 지도를 곧바로 불러오지 않고, 사용자가 해당 iframe 영역에 가까워질 때(스크롤 등으로) 불러오도록 지연 로딩을 적용
+- referrerpolicy="strict-origin-when-cross-origin": 다른 출처(origin)로 요청을 보낼 때 리퍼러(referrer) 정보를 어떻게 전달할지 정하는 보안 정책. 사용자의 이전 페이지 정보가 불필요하게 노출되는 것을 막음.
+-->
+ 

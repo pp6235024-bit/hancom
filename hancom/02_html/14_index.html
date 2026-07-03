@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!--HTML 문서 선언-->
+<html lang="ko"> <!--HTML 시작, 한국어 페이지-->
+<head> <!--문서에 보이지 않는 칸-->
+    <meta charset="UTF-8"> <!-- 빈 요소, 한국어 깨지지 않도록-->
+    <title>표 만들기</title> <!--브라우저 탭 이름-->
+</head>
+<body> <!--화면에 보이는 칸-->
+    <table border="1">
+        <caption>시간표</caption>
+        <!-- tr : 가로 한줄, th : 제목 칸 -->
+        <tr><th>요일</th><th>과목</th><th>시간</th></tr>
+        <!-- td : 보통 내용 칸 -->
+        <tr><td>월</td><td>HTML</td><td>7h</td></tr>
+        <tr><td>화</td><td>CSS</td><td>7h</td></tr>
+        <tr><td>수</td><td>JAVA SCRIPT</td><td>7h</td></tr>
+        <tr><td>목</td><td>HTML</td><td>7h</td></tr>
+        <tr><td>금</td><td>HTML</td><td>7h</td></tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table border="2">
+        <tr><th rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;</th><th colspan="3">요금제 비교</th></tr>
+        <tr><td>Basic</td><td>Pro</td><td>Enterprise</td></tr>
+        <tr><td>가격</td><td colspan="3"></td></tr>
+        <tr><td>월 요금</td><th>0원</th><th>19,000원</th><th>39,000원</th></tr>
+        <tr><td>연간 결제시</td><th>0원</th><th>15,000원</th><th>34,000원</th></tr>
+    </table>
+</body>
+</html>

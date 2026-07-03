@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!--HTML 문서 선언-->
+<html lang="ko"> <!--HTML 시작, 한국어 페이지-->
+<head> <!--보이지 않는 영역-->
+    <meta charset="UTF-8"> <!--한글 깨지지 않게-->
+    <title>Class</title> <!--브라우저 탭 이름-->
+    <style>
+        .bigText{
+            width:45%;
+            text-align: center;
+        }
+        .text{
+            width:40%;
+            text-align: center;
+            padding:15px 20px;
+            border-radius: 50px;
+            background-color:#e2e2e2;
+        }
+        .text:hover{
+            color:white;
+            background-color: gray;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body> <!--실제 보이는 영역-->
+    <h1 class="bigText">Class</h1>
+    <p class="text">배고파요</p>
+    <p class="text">뭐 먹을까</p>
+    <p class="text">아침 메뉴</p>
+    <p class="text">점심 메뉴</p>
+    <p class="text">저녁 메뉴</p>
+</body>
+</html>
+
+<!-- 
+class = 여러 개가 같이 쓰는 이름표, 
+        같은 값을 여러 번 달아도 됨, 
+        나중에 CSS로 하나만 꾸미면 둘 다 같이 바뀜 
+-->

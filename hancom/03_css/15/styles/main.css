@@ -1,0 +1,16 @@
+:root{
+     --main-color: red; 
+     --gap:12px;
+}
+
+.row{
+    gap:var(--gap);
+    display:flex;
+}
+.btn{padding:8px 18px;
+  border: none;
+  border-radius: 8px;
+  background: var(--main-color);
+color: rgb(230, 212, 212);
+  font-weight: 700;
+  cursor: pointer;}

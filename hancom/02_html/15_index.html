@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!--HTML 문서 선언-->
+<html lang="ko"> <!--HTML 시작, 한국어 페이지-->
+<head> <!--문서에 보이지 않는 칸-->
+    <meta charset="UTF-8"> <!--빈 요소, 한글 깨지지 않게-->
+    <title>폼 그리고 입력</title> <!-- 브라우저 탭 이름 -->
+</head>
+<body> <!--화면에 보이는 칸-->
+    <!-- 입력 칸들을 담는 묶는 상자 -->
+    <form>
+        <!--label : 설명 글자, input : 글자 칸-->
+        <label>이름 : <input type="text" placeholder="이름 입력"></label>
+        <br>
+        <hr>
+        <label>나이 : <input type="number" placeholder="나이 입력"></label>
+        <br>
+        <hr>
+        <label>좋아하는 색 : <input type="color" value="#7F77DD"></label>
+        <br>
+        <hr>
+        <label>얼굴 이미지 첨부 : <input type="file" accept="image/*"></label>
+        <br>
+        <hr>
+        <button type="submit">보내기</button>
+    </form>
+</body>
+</html>

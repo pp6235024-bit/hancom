@@ -1,0 +1,10 @@
+# 동영상 무시
+*.mp4
+
+# 이미지 무시
+*.jpeg
+*.jpg
+*.png
+
+# 의존성
+node_modules/

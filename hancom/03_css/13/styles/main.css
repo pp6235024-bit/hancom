@@ -1,0 +1,15 @@
+grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+    
+}
+
+card{ background-color: #db9191;
+   color: #e4cece;
+    border-radius=spx;
+    padding: 16px;
+    text-align: center;
+}
+
+/*?*/
