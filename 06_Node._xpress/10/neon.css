@@ -1,0 +1,21 @@
+/* ===== NEON CARD STYLES ===== */
+
+.row-pink {
+  background: linear-gradient(135deg, #f953c6, #9b3bcc 55%, #6a11cb);
+  box-shadow:
+    0 0 8px 2px rgba(245, 92, 199, 0.7),
+    0 0 20px 4px rgba(249, 83, 198, 0.3),
+    0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.row-pink:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 12px 3px rgba(249, 83, 198, 0.9),
+    0 0 30px 8px rgba(249, 83, 198, 0.4),
+    0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.row-pink .avatar { background: rgba(255, 255, 255, 0.25); color: #fff; }
+.row-pink .name   { color: #fff; }
+.row-pink .num    { color: rgba(255, 255, 255, 0.85); border-color: rgba(255, 255, 255, 0.35); }

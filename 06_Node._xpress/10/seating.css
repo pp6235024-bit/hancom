@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background: #1a0a2e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 20px 64px;
+  background-image:
+    linear-gradient(rgba(255,0,200,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,0,200,0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 16px #ff6ec7, 0 0 32px rgba(255,110,199,0.4);
+}
+
+.teacher-wrap {
+  width: 100%;
+  max-width: 870px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.teacher-desk {
+  width: 190px;
+  background: linear-gradient(135deg, #f953c6, #b91d73);
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow:
+    0 0 16px rgba(249,83,198,0.75),
+    0 0 36px rgba(249,83,198,0.35),
+    0 6px 20px rgba(0,0,0,0.4);
+}
+
+.classroom {
+  display: grid;
+  grid-template-columns: repeat(3, 120px) 44px repeat(3, 120px);
+  gap: 28px;
+}
+
+.card {
+  border-radius: 14px;
+  padding: 16px 10px 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+  transition: transform 0.18s, box-shadow 0.18s;
+  border: none;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name { font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+.num  { font-size: 10px; background: transparent; border: 1px solid; border-radius: 20px; padding: 2px 10px; letter-spacing: 1px; }
+
+.card.empty {
+  background: rgba(255,255,255,0.04);
+  border: 2px dashed rgba(255,110,199,0.2);
+  box-shadow: none;
+}
+.card.empty:hover { transform: none; box-shadow: none; }
+.card.empty .avatar { background: rgba(255,110,199,0.08); color: rgba(255,110,199,0.25); }
+.card.empty .name  { color: rgba(255,110,199,0.25); font-size: 11px; }
+
+.aisle { display: flex; align-items: center; justify-content: center; }
+.aisle span {
+  writing-mode: vertical-rl;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255,110,199,0.5);
+  letter-spacing: 4px;
+  padding: 14px 6px;
+  border-radius: 6px;
+  border: 1px dashed rgba(255,110,199,0.25);
+  background: rgba(255,110,199,0.05);
+}
+
+.note { margin-top: 26px; font-size: 11px; color: rgba(255,110,199,0.3); letter-spacing: 2px; }
