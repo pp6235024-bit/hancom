@@ -3,10 +3,10 @@ const input   = document.getElementById('q')
 const sendBtn = document.getElementById('sendBtn')
 const resetBtn = document.getElementById('resetBtn')
 
-// 파일을 직접 열었을 때도 서버에 연결되도록 절대 URL 사용
-const API_URL = window.location.protocol === 'file:'
-  ? 'http://localhost:3000/api/chat'
-  : '/api/chat'
+// localhost에서 열릴 때만 상대경로, 그 외(Vercel 등)는 로컬 서버 직접 연결
+const API_URL = (window.location.hostname === 'localhost' && window.location.protocol !== 'file:')
+  ? '/api/chat'
+  : 'http://localhost:3000/api/chat'
 
 // 대화 기록 (멀티턴) — 서버로 통째로 보냄
 let history = []
