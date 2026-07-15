@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 챗봇</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="header">
+      <h1 class="title">💬 AI 챗봇</h1>
+      <button id="settingToggle" class="icon-btn" title="AI 성격 설정">⚙️</button>
+    </header>
+
+    <div id="settingPanel" class="setting-panel hidden">
+      <label class="setting-label">AI 성격 설정 (시스템 프롬프트)</label>
+      <textarea id="systemPrompt" class="setting-input" rows="3" placeholder="예) 당신은 친절한 한국어 어시스턴트입니다. 항상 공손하게 답변해주세요.">당신은 친절하고 유능한 AI 어시스턴트입니다. 한국어로 답변해주세요.</textarea>
+      <button id="applyBtn" class="apply-btn">적용</button>
+    </div>
+
+    <div id="chatBox" class="chat-box">
+      <div class="bubble ai">안녕하세요! 무엇이든 물어보세요 😊</div>
+    </div>
+
+    <div class="input-row">
+      <textarea id="q" class="input" placeholder="메시지를 입력하세요..." rows="1"></textarea>
+      <div class="btn-col">
+        <button id="sendBtn" class="send-btn">전송</button>
+        <button id="resetBtn" class="reset-btn">초기화</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
